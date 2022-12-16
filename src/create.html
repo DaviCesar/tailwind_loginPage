@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Criar Conta</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body class="bg-indigo-100 dark:bg-slate-700 transition-all">
+    <div class="grid place-items-center h-screen">
+      <div
+        class="flex flex-col m-5 bg-white dark:bg-slate-600 p-20 shadow-2xl rounded-xl">
+        <div class="relative">
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none absolute w-6 h-6 top-[-60px] left-[-40px] dark:fill-indigo-100">
+              <path
+                fill-rule="evenodd"
+                d="M9.53 2.47a.75.75 0 010 1.06L4.81 8.25H15a6.75 6.75 0 010 13.5h-3a.75.75 0 010-1.5h3a5.25 5.25 0 100-10.5H4.81l4.72 4.72a.75.75 0 11-1.06 1.06l-6-6a.75.75 0 010-1.06l6-6a.75.75 0 011.06 0z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="relative">
+          <!--DARKMODE/LIGHTMODE-->
+          <button
+            onclick="toggleDarkMode()"
+            class="absolute w-6 h-6 top-[-56px] left-[280px]"
+          >
+            <svg
+              id="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+              />
+            </svg>
+            <svg
+              id="moon"
+              style="display: none"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 fill-indigo-100 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <!--ICONE usuario-->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="w-16 h-14 mb-6 dark:fill-indigo-100"
+          >
+            <path
+              d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col mt-4">
+          <div class="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="dark:fill-indigo-100 w-[30px] h-[30px] absolute left-[-30px] bottom-[17px]"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.5 3.75a3 3 0 00-3 3v10.5a3 3 0 003 3h15a3 3 0 003-3V6.75a3 3 0 00-3-3h-15zm4.125 3a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zm-3.873 8.703a4.126 4.126 0 017.746 0 .75.75 0 01-.351.92 7.47 7.47 0 01-3.522.877 7.47 7.47 0 01-3.522-.877.75.75 0 01-.351-.92zM15 8.25a.75.75 0 000 1.5h3.75a.75.75 0 000-1.5H15zM14.25 12a.75.75 0 01.75-.75h3.75a.75.75 0 010 1.5H15a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5h3.75a.75.75 0 000-1.5H15z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            <input
+              type="text"
+              placeholder="Nome"
+              class="dark:text-indigo-100 dark:bg-slate-700 p-2 m-3 ml-6 bg-gray-200 hover:bg-gray-300 shadow-sm shadow-black outline-none rounded-md"
+            />
+          </div>
+
+          <div class="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="dark:fill-indigo-100 w-[30px] h-[30px] absolute left-[-30px] bottom-[17px]"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M15.75 1.5a6.75 6.75 0 00-6.651 7.906c.067.39-.032.717-.221.906l-6.5 6.499a3 3 0 00-.878 2.121v2.818c0 .414.336.75.75.75H6a.75.75 0 00.75-.75v-1.5h1.5A.75.75 0 009 19.5V18h1.5a.75.75 0 00.53-.22l2.658-2.658c.19-.189.517-.288.906-.22A6.75 6.75 0 1015.75 1.5zm0 3a.75.75 0 000 1.5A2.25 2.25 0 0118 8.25a.75.75 0 001.5 0 3.75 3.75 0 00-3.75-3.75z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <input
+              type="password"
+              placeholder="Senha"
+              class="dark:text-indigo-100 dark:bg-slate-700 p-2 m-3 ml-6 bg-gray-200 hover:bg-gray-300 shadow-sm shadow-black outline-none rounded-md"
+            />
+          </div>
+
+          <div class="relative">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-[30px] h-[30px] absolute left-[-30px] bottom-[17px] dark:fill-indigo-100"
+            >
+              <path
+                d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+              />
+              <path
+                d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+              />
+            </svg>
+            <input
+              type="email"
+              placeholder="E-mail"
+              class="dark:text-indigo-100 dark:bg-slate-700 p-2 m-3 ml-6 bg-gray-200 hover:bg-gray-300 shadow-sm shadow-black outline-none rounded-md"
+            />
+          </div>
+        </div>
+        <div class="mt-4">
+          <button
+            type="button"
+            class="transition-all dark:bg-sky-500 dark:hover:bg-sky-400 bg-slate-900 text-white hover:bg-slate-700 mt-6 m-auto block px-4 py-1 rounded-md shadow-md font-sans"
+          >
+            Criar Conta
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
